@@ -1,4 +1,4 @@
-# 🧬 Cellular Automaton Simulator – COMP10002 Assignment 2 2024
+# 🧬 Cellular Automaton Simulator – COMP10002 Assignment 2
 
 This C program simulates **elementary 1D cellular automata** and solves the **density classification problem** using logic and dynamic data structures. Developed as part of the University of Melbourne's **COMP10002 Foundations of Algorithms** subject (Year 1, Semester 2, 2024).
 
@@ -37,27 +37,10 @@ file tests/test0.txt, the output would be like tests/test0-out.txt.
 3. Create other input files: 
 - Input Format: 
     The input file (e.g. test0.txt) contains:
-    <cell count>
-    <rule number>         # e.g., 30, 184, 232
-    <initial cell states> # e.g., **..*....**
-    <number of chains>
-    <chain line>          # e.g., 0,5 means apply rule 0 for 5 steps
-    <chain line>          # e.g., 30,10 means apply rule 30 for 10 steps
+<pre><code>```text # Sample format for test input <cell count> <rule number> # e.g., 30, 184, 232 <initial cell states> # e.g., **..*....** <number of chains> <chain line> # e.g., 0,5 means apply rule 0 for 5 steps <chain line> # e.g., 30,10 means apply rule 30 for 10 steps ```</code></pre>
     - Output Format
 Your output will look like:
-==STAGE 0============================
-SIZE: 31
-RULE: 30
--------------------------------------
-000 001 010 011 100 101 110 111
-  0   1   1   1   1   0   0   0 
--------------------------------------
- 0: **..........*..*..*..........*.
-==STAGE 1============================
-...
-==STAGE 2============================
-...
-==THE END============================
+<pre><code>```text ==STAGE 0============================ SIZE: 31 RULE: 30 ------------------------------------- 000 001 010 011 100 101 110 111 0 1 1 1 1 0 0 0 ------------------------------------- 0: **..........*..*..*..........*. ==STAGE 1============================ ... ==STAGE 2============================ ... ==THE END============================ ```</code></pre>
 
 4. **Testing**: test0.txt and test1.txt test rule combinations, chain effects, and cell behavior. More tests can be added inside the tests/ folder and be run and tested in the same way.
 5. The program output shows simulation steps and indicates whether the density classification succeeded. Please refer to the assignment description in the docs folder for more information on the use of cellular automation.
@@ -65,7 +48,7 @@ RULE: 30
 ---
 
 🎓 Additional Information
-Author: Jiani Li
-Subject: COMP10002 Foundations of Algorithms
-University: University of Melbourne
-Project Mark: 20/20
+- Author: Jiani Li
+- Subject: COMP10002 Foundations of Algorithms
+- University: University of Melbourne
+- Project Mark: 20/20
